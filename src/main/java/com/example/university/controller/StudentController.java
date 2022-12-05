@@ -27,7 +27,7 @@ public class StudentController {
         return new ResponseEntity<>(studentService.findById(id), HttpStatus.OK);
     }
 
-    @GetMapping()
+    @GetMapping
     public ResponseEntity<CommonResponse> findAll() {
         return new ResponseEntity<>(studentService.findAll(), HttpStatus.OK);
     }
